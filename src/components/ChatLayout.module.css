@@ -1,0 +1,80 @@
+.chatLayout {
+  background-color: var(--color-white);
+}
+
+.heading {
+  text-align: center;
+  padding: .5em 0 1.5em 0;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.chatBox {
+  padding: 0 1em;
+  overflow: auto;
+  position: relative;
+  height: calc(100vh - 105px);
+}
+
+.chatBox::-webkit-scrollbar {
+  display: none;
+}
+
+.chatContainer {
+  overflow: auto;
+  height: calc(100% - 68px);
+  width: 100%;
+}
+
+.chatContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.typeBox {
+  width: 96%;
+  display: flex;
+  border: 1px solid var(--color-light-gray);
+  border-radius: .2em;
+  margin-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+}
+
+.textInput {
+  flex: 1 1 100px;
+  padding: .5rem;
+  outline: none;
+  border: 0;
+  border-radius: .2em;
+  resize: none;
+  line-height: 1.5;
+  font-size: .8em;
+}
+
+.textInput::-webkit-scrollbar {
+  display: none;
+}
+
+.sendButton {
+  flex: 0 0 20px;
+  padding: .5rem 1rem;
+  border: 0;
+  border-top-right-radius: .2em;
+  border-bottom-right-radius: .2em;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.sendButton:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,23 @@
+.rightAligned {
+  text-align: right;
+}
+
+.rightAligned .msg {
+  background-color: var(--primary-chat);
+}
+
+.msg {
+  display: inline-block;
+  max-width: 70%;
+  border-radius: .4rem;
+  background-color: var(--secondary-chat);
+  padding: .4rem;
+  line-height: 1.6;
+  margin: .4rem 0;
+  text-align: left;
+  font-size: .8em;
+}
+
+.formattedLine {
+  white-space: pre-line;
+}

@@ -1,0 +1,30 @@
+:root {
+  --primary-chat: #b5cef7;
+  --secondary-chat: #e3e5e8;
+  --color-primary: #2994f2;
+  --color-light-gray: #cecece;
+  --color-white: #eeeeee;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+main {
+  width: min(600px, 100vw);
+  margin: 0 auto;
+}
