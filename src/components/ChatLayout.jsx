@@ -30,7 +30,7 @@ const ChatLayout = () => {
   }
 
   const fetchAiResponse = () => {
-    fetch('url/api/chat', {
+    fetch('https://chatai-backend-mszh.onrender.com/api/chat', {
       method: 'POST',
       body: JSON.stringify({
         data: chats
